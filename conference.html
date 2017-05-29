@@ -1,0 +1,363 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Conference</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="troch.png" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="techenthusiastic.js"></script>
+  <script src="techenthusiastic2.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .affix ~ .container-fluid {
+     position: auto;
+     top: 20px;
+  }
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: auto;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+	.heading{
+	background-color:orange;
+	font-size:30px;
+	}
+	
+	.affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 10px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+  
+  </style>
+  
+  
+  
+  
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 40%;
+      margin: auto;
+  }
+  
+
+</style>
+<script>
+$(document).ready(function() {
+  $('input[name="q"]').keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+</script>
+
+
+</head>
+<body>
+
+
+
+  
+  <div class="container-fluid nav-stacked" style="background-color: #ff751a;color:#fff;height:150px;padding-bottom:200px;">
+<h1 class="logo">
+      <hr class="slide" style="color:black;width: 280px;">
+      <p><h1 class="text-center" ><b>RAEPES-2016</b></h1></p>
+	  <hr class="slide" >
+	  <h3 class="text-center"><b>National Conference on Recent Advances in Electrical Power Engineering & Systems</b><h3>
+	  <h4 class="text-center"><b>20th - 21st October 2016</b></h4>
+      
+      </h1>
+
+  </p>
+  
+</div>
+<div>
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="201" style="background-color:#003399;z-index:100;">
+  <div class="container-fluid" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  
+    </div>
+    <div class="collapse navbar-collapse" data-spy="affix"  data-offset-top="201" id="myNavbar" >
+      <ul class="nav navbar-nav">
+        <li><a href="index.html" style = "font-size:12px;color: #e6ffe6;">Home</a></li>
+        <li ><a href="about.html" style = "font-size:12px;color: #e6ffe6;">About</a></li>
+	<li class="active"><a href="conference.html" style = "font-size:12px;color: #e6ffe6;">Conference</a></li>
+	<li><a href="eee.html" style = "font-size:12px;color: #e6ffe6;">EEE Department</a></li>
+	<li><a href="acco.html" style = "font-size:12px;color: #e6ffe6;">Accomodation</a></li>
+	<li><a href="comm.html" style = "font-size:12px;color: #e6ffe6;">Committee</a></li>
+	<li><a href="reg.html" style = "font-size:12px;color: #e6ffe6;">Registration</a></li>
+	
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+</div> 
+
+
+
+<div class="container-fluid">
+		<h4 style="font-family: Palatino Linotype;font-size:20px;">About Conference</h4>
+		<p style="font-family: Palatino Linotype;">Power systems have always been important since the dawn of 
+		industrial revolution. As a consequence of developments in the semiconductor industry, 
+		applications of Power electronics and Power systems have penetrated into multiple disciplines. 
+		The present national conference is envisaged in the background of the above development. 
+		The objective of RAEPES-2016 is to bring researchers, engineers, scientists and scholars together to
+		exchange and share their experiences, new ideas and research results in all major areas of Electrical 
+		Engineering and identify the practical challenges encountered and the solutions adopted through 
+		presentations and discussions. The conference intends to encourage inventions, scientific investigations 
+		and research to promote their application for development in all sectors.</p>
+		
+		
+		<div class="rows">
+		<div class="col-sm-6 col-left" style="z-index:-10;padding-top:45px;" >
+		<h4 style="font-family: Palatino Linotype;font-size:20px; ">Papers may be submitted in the following areas but not limited to:-</h4>
+		<pre style="font-family: Palatino Linotype; z-index:-10;">
+
+		• Renewable Energy Sources
+		• Control Systems
+		• Power System Operation and Control
+		• Power Quality
+		• Facts & HVDC
+		• Smart Grid Technologies
+		• Power Electronics Industrial Drives and Applications
+		• High Voltage Engineering
+		• Instrumentation
+		• Application of Electrical Engg in Interdisciplinary Areas
+
+		
+		
+</pre>
+
+
+</div>
+
+
+<div class="col-sm-6 col-left" style="z-index:-10;padding-top:45px;" >
+		<h4 style="font-family: Palatino Linotype;font-size:20px; ">Best Paper Awards:</h4>
+		<pre style="font-family: Palatino Linotype; z-index:-10;text-align: left;">
+
+		• 1st Prize:       6000/- 
+		• 2nd Prize:     4000/-  
+		• 3rd Prize:      2000/- 
+		• Consolation: 1000/- 
+		</pre>
+
+
+</div>
+
+		
+		</div>
+		
+	</div>	
+	
+<p style="font-family: Palatino Linotype;margin-left:30px;font-size:20px;">Full paper with abstract must be prepared as per IEEE format. The abstract should be limited to 150 words and the length of the paper shall not exceed 6 pages including abstract to be submitted in word and pdf format to
+        <b style="color:blue;font-size:20px;">raepes@sreenidhi.edu.in </b></p>
+
+
+<footer class="container-fluid text-center" style="background-color: #003399;z-index:100;">
+
+<div class="container-fluid">
+<div class="row">
+
+
+
+
+
+<div class="col-sm-4">
+<div class="panel panel-default text-center" style="background-color:green;">
+
+
+<div class="panel-body col-sm-4">
+<p ><a href="http://www.sreenidhi.edu.in/index.php"><img src="naac.png" style="widht:75px;height:75px;margin:auto;"/></a></p>
+</div>
+<div class="panel-body col-sm-4">
+<a href="http://www.sreenidhi.edu.in/index.php"><img src="ugc.png" style="widht:75px;height:75px;margin:auto;"/></a>
+</div>
+<div class="panel-body col-sm-4">
+<a href="http://www.sreenidhi.edu.in/index.php"><img src="nba.png" style="widht:75px;height:75px;margin:auto;"/></a>
+</div>
+<div class="panel-body col-sm-4">
+<a href="http://www.sreenidhi.edu.in/index.php"><img src="logo.jpg" style="widht:75px;height:75px;margin:auto;"/></a>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+<div class="col-sm-4">
+<div class="panel panel-default text-center" style="background-color:green;">
+
+
+<div class="panel-body col-sm-8">
+<h3>Address</h3>
+<p>Department OF EEE</p>
+
+<p>Sreenidhi Institute of Science and Technology</p>
+
+<p>(Autonomous)</p>
+
+<p>Yamnampet, Ghatkesar, R.R. Dist,</p>
+
+<p>Hyderabad -501301</p>
+</div>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="panel panel-default text-center" style="background-color:green;">
+
+
+<div class="panel-body col-sm-12">
+<h3>Contact us</h3>
+<div class="col-sm-6">
+<p>Dr. P. Anil Kumar</p>
+<p>Assoc. Prof. EEE.</p>
+<p>91-9160624935</p>
+</div>
+
+<p>Dr. C. Bhargava  </p>
+<p>Assoc. Prof. EEE.</p>
+<p>91-9866071825</p>
+
+
+<p>office-eee@sreenidhi.edu.in</p>
+</div>
+
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+<hr>
+<p  style="font-color:white;">Copyright © 2016 SNIST. All Rights Reserved. Website Designed M.Revanth Reddy|P.Rathnakar Reddy|A.Rama Krishina </p>
+
+</div>
+</footer>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+
+</body>
+</html>
